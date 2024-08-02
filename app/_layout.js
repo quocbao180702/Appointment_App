@@ -4,10 +4,18 @@ import { ThemeProvider } from "react-native-magnus";
 export default function RootLayout() {
   return (
     <ThemeProvider>
-      <Stack>
-        <Stack.Screen name="aboutUs/index" />
-        <Stack.Screen name="recruiment/index" />
+      <Stack
+        screenOptions={{
+          headerStyle: {
+            backgroundColor: '#677fed',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}>
         <Stack.Screen name="index" />
+        <Stack.Screen name="aboutUs/index" />
       </Stack>
     </ThemeProvider>
   );

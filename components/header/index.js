@@ -4,40 +4,49 @@ import { Button, Div } from "react-native-magnus";
 function NavBar() {
     return (
         <Div row style={{
-            justifyContent: "space-between",
+            justifyContent: "flex-start",
             alignContent: "center"
         }}>
             <Button
-                mt="lg"
+                /* mt="lg"
                 px="xl"
-                py="lg"
+                py="lg" */
                 bg="white"
                 color="black"
                 underlayColor="red100"
+                style={{
+                    flex: 1
+                }}
             >
                 <Link href={"/"}>
                     Trang Chủ
                 </Link>
             </Button>
             <Button
-                mt="lg"
+               /*  mt="lg"
                 px="xl"
-                py="lg"
+                py="lg" */
                 bg="white"
                 color="black"
                 underlayColor="red100"
+                style={{
+                    flex: 1
+                }}
             >
                 <Link href={"/aboutUs"}>
                     Về Chúng Tôi
                 </Link>
             </Button>
             <Button
-                mt="lg"
+               /*  mt="lg"
                 px="xl"
-                py="lg"
+                py="lg" */
                 bg="white"
                 color="black"
                 underlayColor="red100"
+                style={{
+                    flex: 1
+                }}
             >
                 <Link href={"/recruiment"}>
                     Tuyển Dụng
